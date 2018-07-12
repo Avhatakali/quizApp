@@ -7,104 +7,79 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>firstQuestions</ion-title>
+    <ion-title>Level 1 Questions <br> 'Computers'</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-    <div class="wrapper">
-
-  <div class="questions">
-    <ion-label>question</ion-label>
-    <ion-item>
-        <ion-label>answer</ion-label>
-        <ion-checkbox color="primary" ></ion-checkbox>
-    </ion-item>
- 
-    <ion-item>
-        <ion-label>answer</ion-label>
-        <ion-checkbox color="" ></ion-checkbox>
-    </ion-item>
+<div class="wrap">
+    <ion-slides class="questions" pager>
     
-    <ion-item>
-        <ion-label>answer</ion-label>
-        <ion-checkbox color="dark" ></ion-checkbox>
-    </ion-item>
-</div>
+        <ion-slide radio-group class="QnA">
+            <h3>Object Oriented Programming</h3>
 
-<div class="questions">
-    <ion-label>question</ion-label>
-    <ion-item>
-        <ion-label>answer</ion-label>
-        <ion-checkbox color="dark" ></ion-checkbox>
-    </ion-item>
- 
-    <ion-item>
-        <ion-label>answer</ion-label>
-        <ion-checkbox color="dark" ></ion-checkbox>
-    </ion-item>
-    
-    <ion-item>
-        <ion-label>answer</ion-label>
-        <ion-checkbox color="dark" ></ion-checkbox>
-    </ion-item>
-</div>
+            <ion-item>
+                <ion-label>answer</ion-label>
+                <ion-select [(ngModel)]="Q1">
+                      <ion-option value="c#">C#</ion-option>
+                      <ion-option value="HTML">PYTHON</ion-option>
+                </ion-select>
+            </ion-item>
+       </ion-slide>
 
-<div class="questions">
-    <ion-label>question</ion-label>
-    <ion-item>
-        <ion-label>answer</ion-label>
-        <ion-checkbox color="dark" ></ion-checkbox>
-    </ion-item>
- 
-    <ion-item>
-        <ion-label>answer</ion-label>
-        <ion-checkbox color="dark" ></ion-checkbox>
-    </ion-item>
-    
-    <ion-item>
-        <ion-label>answer</ion-label>
-        <ion-checkbox color="dark" ></ion-checkbox>
-    </ion-item>
-</div>
+    <ion-slide radio-group class="QnA" >
+                <h3>Scripting Language</h3>
+        
+       <ion-item>
+            <ion-label>answer</ion-label>
+                    <ion-select [(ngModel)]="Q2">
+                        <ion-option value="php">PHP</ion-option>
+                        <ion-option value="java">JAVA</ion-option>
+                    </ion-select>
+        </ion-item>        
+    </ion-slide> 
 
-<div class="questions">
-   <ion-label>question</ion-label>
-    <ion-item>
-        <ion-label>answer</ion-label>
-        <ion-checkbox color="dark" ></ion-checkbox>
-    </ion-item>
+    <ion-slide radio-group  class="QnA">
+        <h3>what is the most basic Language microsoft made ?</h3>
 
-    <ion-item>
-        <ion-label>answer</ion-label>
-        <ion-checkbox color="dark" ></ion-checkbox>
-    </ion-item>
-    
-    <ion-item>
-        <ion-label>answer</ion-label>
-        <ion-checkbox color="dark" ></ion-checkbox>
-    </ion-item>
-</div>
+        <ion-item>
+            <ion-label>answer</ion-label>
+                        <ion-select [(ngModel)]="Q3">
+                        <ion-option value="visual basic">visual basic</ion-option>
+                <ion-option value="C++">C++</ion-option>
+            </ion-select>
+        </ion-item>      
+    </ion-slide>
 
-<div class="questions">
-    <ion-label>question</ion-label>
-    <ion-item>
-        <ion-label>answer</ion-label>
-        <ion-checkbox color="dark" ></ion-checkbox>
-    </ion-item>
- 
-    <ion-item>
-        <ion-label>answer</ion-label>
-        <ion-checkbox color="dark" ></ion-checkbox>
-    </ion-item>
-    
-    <ion-item>
-        <ion-label>answer</ion-label>
-        <ion-checkbox color="dark" ></ion-checkbox>
-    </ion-item>
-</div>
+    <ion-slide radio-group class="QnA">
+        <h3>what is the most complicated Language ?</h3>
 
+      <ion-item>
+            <ion-label>answer</ion-label>
+                <ion-select [(ngModel)]="Q4">
+                    <ion-option value="C#">C#</ion-option>
+                    <ion-option value="C++">C++</ion-option>
+            </ion-select>
+        </ion-item>     
+    </ion-slide>
+
+    <ion-slide radio-group  class="QnA">
+        <h3>Who really invented the computer ?</h3>
+   
+        <ion-item>
+            <ion-label>answer</ion-label>
+                 <ion-select [(ngModel)]="Q5">
+                      <ion-option value="Charles Babbage">Charles Babbage</ion-option>
+                      <ion-option value="Alan Turing">Alan Turing</ion-option>
+                </ion-select>
+        </ion-item>          
+    </ion-slide>
+   
+</ion-slides>
+
+    <button ion-button full class="btn" round type="submit" (click) = "submitAnswer ()">SUBMIT</button>
+   
 </div>
 </ion-content>

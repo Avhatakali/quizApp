@@ -12,8 +12,8 @@ export class HomePage {
 
   }
 
-start (){
-  this.navCtrl.push(FirstQuestionsPage);
-}
+    start (){
+      this.navCtrl.push(FirstQuestionsPage);
+    }
 
 }

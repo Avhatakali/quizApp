@@ -1,0 +1,89 @@
+<!--
+  Generated template for the FirstQuestionsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-navbar>
+      <ion-title>Level 4 Questions <br> ' MATHS '</ion-title>
+    </ion-navbar>
+  
+  </ion-header>
+  
+  
+<ion-content padding>
+<div  class="wrap">   
+  
+    <ion-slides pager  class="questions">
+                    
+        <ion-slide radio-group  class="QnA">
+            <h3> what is the value/s of x, x <sup>2</sup> = __ </h3> 
+                        
+             <ion-item>
+                   <ion-label>Answer</ion-label>
+                <ion-select [(ngModel)]="Q1">
+                    <ion-option value = "x = 2" >x = 2</ion-option>
+                    <ion-option value ="x = +2 / -2" >x = +2 / -2</ion-option>
+                </ion-select>
+            </ion-item>
+        </ion-slide>
+            
+        <ion-slide radio-group  class="QnA">
+                <h3>What is 8 x 5 ?</h3> 
+            
+            <ion-item>
+                <ion-label>Answer</ion-label>
+            
+                    <ion-select  [(ngModel)]="Q2">
+                            <ion-option value ="40">40</ion-option>
+                            <ion-option value ="35">35</ion-option>
+                    </ion-select>
+             </ion-item>
+        </ion-slide>        
+            
+        <ion-slide radio-group  class="QnA">
+            <h3>X squared = 64 What is the value of x?</h3> 
+                      
+             <ion-item>
+                    <ion-label>Answer</ion-label>
+                <ion-select [(ngModel)]="Q3">
+                    <ion-option value ="32">32</ion-option>
+                    <ion-option value ="8">8</ion-option>
+                </ion-select>
+             </ion-item>
+        </ion-slide>  
+              
+        <ion-slide  radio-group class="QnA" >
+            <h3>If x=2 then what is 4x+5 equal to ?</h3>
+            
+                <ion-item>
+                        <ion-label>Answer</ion-label> 
+                          
+                    <ion-select [(ngModel)]="Q4">
+                        <ion-option value = "11">11</ion-option>
+                        <ion-option value = "13">13</ion-option>
+                    </ion-select>
+                </ion-item> 
+        </ion-slide>
+            
+        <ion-slide radio-group class="QnA" >
+                <h3>2x + 3 = 15  What is the value of x ?</h3>
+
+            <ion-item>
+                <ion-label>Answer</ion-label>
+            
+                   <ion-select [(ngModel)]="Q5">
+                        <ion-option value = "6" >6</ion-option>
+                        <ion-option value = "7">7</ion-option>
+                  </ion-select>
+            </ion-item>
+        </ion-slide>      
+            
+     </ion-slides>
+            
+        <button ion-button round full type="submit" (click) = "submitAnswer ()">SUBMIT</button>
+    </div> 
+</ion-content>
+  

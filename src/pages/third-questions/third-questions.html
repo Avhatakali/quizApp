@@ -1,0 +1,85 @@
+<!--
+  Generated template for the FirstQuestionsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-navbar>
+      <ion-title>Level 3 Question <br> ' Bob Marley '</ion-title>
+    </ion-navbar>
+  
+  </ion-header>
+  
+  <ion-content padding>
+    <div  class="wrap">   
+  
+    <ion-slides pager  class="questions">
+        
+        <ion-slide radio-group  class="QnA">
+           <h3>When was Bob Marley born ?</h3> 
+            <ion-item>
+                <ion-label>Answer</ion-label>
+                    <ion-select [(ngModel)]="Q1">
+                        <ion-option value = "1945" >x = 2</ion-option>
+                        <ion-option value ="1948" >x = +2 / -2</ion-option>
+                    </ion-select>
+            </ion-item>
+        </ion-slide>
+
+        <ion-slide radio-group  class="QnA">
+                <h3> Where was Bob Marley born ?</h3> 
+                 <ion-item>
+                     <ion-label>Answer</ion-label>
+
+                         <ion-select  [(ngModel)]="Q2">
+                             <ion-option value ="Jamaica">Jamaica</ion-option>
+                             <ion-option value ="United States">United States</ion-option>
+                         </ion-select>
+                 </ion-item>
+             </ion-slide>        
+
+             <ion-slide radio-group  class="QnA">
+                    <h3>What region was Bob Marley born in</h3> 
+           <ion-item>
+             <ion-label>Answer</ion-label>
+                <ion-select [(ngModel)]="Q3">
+                    <ion-option value ="Kingston">Kingston</ion-option>
+                    <ion-option value ="St. Ann's Parish">St. Ann</ion-option>
+              </ion-select>
+            </ion-item>
+      </ion-slide>  
+  
+      <ion-slide  radio-group class="QnA" >
+        <h3>What was Bob Marley's full name ?</h3>
+
+        <ion-item>
+            <ion-label>Answer</ion-label> 
+              
+           <ion-select [(ngModel)]="Q4">
+                <ion-option value = "Robert Nesta Marley">Robert Nesta Marley</ion-option>
+                <ion-option value = "Bob Nesta Marley">Bob Nesta Marley</ion-option>
+            </ion-select>
+        </ion-item> 
+      </ion-slide>
+
+    <ion-slide radio-group class="QnA" >
+        <h3>Finish the lyric... "I remember when we used to sit in the government yard in...</h3>
+       
+        <ion-item>
+               <ion-label>Answer</ion-label>
+
+            <ion-select [(ngModel)]="Q5">
+                <ion-option value = "Trenchtown" >Trenchtown</ion-option>
+                <ion-option value = "Jamaica">Jamaica</ion-option>
+            </ion-select>
+        </ion-item>
+    </ion-slide>      
+
+   </ion-slides>
+
+      <button ion-button round full type="submit" (click) = "submitAnswer ()">SUBMIT</button>
+</div>  
+</ion-content>
+  
