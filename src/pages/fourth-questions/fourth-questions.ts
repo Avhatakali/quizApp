@@ -42,7 +42,7 @@ export class FourthQuestionsPage {
   submitAnswer (){
   
     console.log(this.Q1)
-    if(this.Q1=="1945"){
+    if(this.Q1=="x = +2 / -2"){
       this.score1=this.score1 +20;
       console.log(this.score1);
     }
@@ -52,7 +52,7 @@ export class FourthQuestionsPage {
     }
    
     console.log(this.Q2)
-    if(this.Q2=="Jamaica"){
+    if(this.Q2=="40"){
       this.score2=this.score2 +20;
       console.log(this.score2);
     
@@ -64,7 +64,7 @@ export class FourthQuestionsPage {
     }
   
     console.log(this.Q3)
-    if(this.Q3=="St. Ann's Parish"){
+    if(this.Q3=="8"){
       this.score3=this.score3 +20;
       console.log(this.score3);
     }
@@ -75,7 +75,7 @@ export class FourthQuestionsPage {
     }
   
     console.log(this.Q4)
-   if(this.Q4=="Robert Nesta Marley"){
+   if(this.Q4=="13"){
      this.score4=this.score4 +20;
      console.log(this.score4);
    }
@@ -86,7 +86,7 @@ export class FourthQuestionsPage {
    } 
   
    console.log(this.Q5)
-   if(this.Q5=="Trenchtown"){
+   if(this.Q5=="6"){
      this.score5=this.score5 +20;
      console.log(this.score5);
    }
