@@ -1,8 +1,25 @@
 page-home {
 text-align: center;
-}
 
-ion-content{
- padding: 35px;
- margin-top: 30px;
+.bigWrapper{
+    background-image: url("../../assets/imgs/water.gif");
+    background-size: cover;
+   
+  }
+
+  p{
+    margin-top: 50%;
+    opacity: 0.8;
+  }
+
+  p:hover{
+    background: aliceblue;
+    opacity: 0.4;
+  }
+
+  img{
+    width: 400px;
+    border-radius: 75%;
+  }
+
 }

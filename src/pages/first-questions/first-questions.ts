@@ -116,7 +116,7 @@ submitAnswer (){
           }
         },
         {
-          text: 'Agree',
+          text: 'Agree ',
           handler: () => {
             console.log('Agree clicked');
             this.navCtrl.push(SecondQuestionsPage);

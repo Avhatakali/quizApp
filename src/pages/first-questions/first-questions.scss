@@ -1,26 +1,35 @@
 page-first-questions {
 margin: 0;
 padding: 0;
-}
 
-.questions{
-    padding: 30px;
-    margin-top: 40px;
-    text-align: center;
-}
+  .wrap{
+    background-color: aliceblue;
+  }
 
-.QnA{
-    padding: 30px; 
-}
+  .bigWrapper{
 
-.btn{
-    padding: 20px;
-}
+  }
 
-h5{
-    text-align: center;
-}
+    .questions{
+        padding: 30px;
+        margin-top: 40px;
+        text-align: center;
+    }
 
-ion-item{
-    padding: 40px;
-}
+    .QnA{
+        padding: 30px; 
+    }
+
+    .btn{
+        padding: 20px;
+    }
+
+    h5{
+        text-align: center;
+    }
+
+    ion-item{
+        padding: 40px;
+    }
+
+}    
